@@ -135,8 +135,7 @@ canvas {
 .header-cards {
     display: flex;
     gap: 15px;
-    justify-content: flex-end;
-    flex-grow: 1;
+    margin-left: auto; /* ★ 右端に寄せる */
 }
 
 /* ✅ 追加: タイトル横のカードデザイン */
@@ -145,7 +144,7 @@ canvas {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    width: 500px;
     max-width: 100%;
     text-align: center;
     font-size: 24px;
