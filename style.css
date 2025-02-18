@@ -24,6 +24,8 @@ h1 {
 h1.left-align {
     text-align: left;
     padding-left: 20px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 
