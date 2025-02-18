@@ -123,7 +123,7 @@ canvas {
     font-size: 24px !important;
 }
 
-/* ✅ 追加: ヘッダーに「水曜会」「経営戦略室の戦略」カードを追加 */
+/* ✅ ヘッダーエリアのレイアウト */
 .header-container {
     display: flex;
     align-items: center;
@@ -131,10 +131,10 @@ canvas {
     padding: 10px 20px;
 }
 
-/* ✅ 追加: タイトル横のカード配置 */
-.header-cards {
-    flex: 1; /* ★ タイトルのエリアを確保 */
-    padding-right: 100px; /* ★ 確実に間隔を開ける */
+/* ✅ 追加: タイトルのエリアを確保し、カードとの間にスペースを作る */
+.header-left {
+    flex-grow: 1; /* ★ タイトルを左寄せしてスペースを確保 */
+    margin-right: 50px; /* ★ タイトルとカードの間に余白を追加 */
 }
 
 /* ✅ ヘッダー内のカードを右端に寄せる */
@@ -142,6 +142,8 @@ canvas {
     display: flex;
     gap: 15px;
     margin-left: auto; /* ★ 右端に寄せる */
+    flex-shrink: 0; /* ★ 圧縮されないように固定 */
+    min-width: 600px; /* ★ 確実にカードの幅を維持 */
 }
 
 /* ✅ 追加: タイトル横のカードデザイン */
