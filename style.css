@@ -125,11 +125,19 @@ canvas {
 
 /* ✅ 追加: ヘッダーに「水曜会」「経営戦略室の戦略」カードを追加 */
 .header-container {
-    margin-right: 100px; /* ★ タイトルとカードの間を広げる */
-    flex-grow: 1; /* ★ スペースを適切に確保 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
 }
 
 /* ✅ 追加: タイトル横のカード配置 */
+.header-cards {
+    flex: 1; /* ★ タイトルのエリアを確保 */
+    padding-right: 100px; /* ★ 確実に間隔を開ける */
+}
+
+/* ✅ ヘッダー内のカードを右端に寄せる */
 .header-cards {
     display: flex;
     gap: 15px;
